@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+categorys = ['Savings', 'Food', 'Transport', 
+        'Shopping', 'Subscriptions', 'Bills']
+
+categorys.length.times do |i|
+  measurement = Measurement.create!(category: categorys[i] )
+  10.times do |j|
+    Transaction.create!(data: rand(11.2...76.9).round(2), measurement: measurement)
+    puts "#{j+1} created"
+  end
+
+  puts "#{categorys[i]} created!"
+end
