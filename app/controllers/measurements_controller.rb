@@ -21,6 +21,7 @@ class MeasurementsController < ApplicationController
   def create
     measurement = Measurement.find(measurement_params['id'])
      transaction = Transaction.new(transaction_params.merge(measurement_id: measurement.id))
+
     if transaction.save
       render json: transaction.as_json, status: :created
     else
@@ -53,6 +54,6 @@ class MeasurementsController < ApplicationController
       params.require(:measurement).permit(:id)
     end
     def transaction_params
-      params.require(:transaction).permit(:data)
+      params.require(:measure).permit(:data)
     end
 end
