@@ -8,13 +8,12 @@
 categorys = ['Bills', 'Rent', 'Shopping', 
         'Food', 'Subscriptions', 'Savings']
 
-icons = ['https://ibb.co/sqXdw21',
-'https://ibb.co/DCrTxTn',
-'https://ibb.co/R0vp2Nh',
-'https://ibb.co/1qKmXBg',
-'https://ibb.co/Hd3jPc7',
-'https://ibb.co/1TfCfBb'
-
+icons = ['https://i.ibb.co/4V93ZtW/noun-finance-371874-removebg-preview.png',
+'https://i.ibb.co/GxR5NDg/noun-rent-2852257-removebg-preview-2.png',
+'https://i.ibb.co/1dNJW1z/noun-Shop-4273649-removebg-preview.png',
+'https://i.ibb.co/xqyLTWY/noun-Food-3480355-removebg-preview.png',
+'https://i.ibb.co/sWMXHw7/noun-subscription-4041618-removebg-preview-2.png',
+'https://i.ibb.co/RH2hc3L/noun-savings-3850438-removebg-preview.png'
 ]       
 
 categorys.length.times do |i|
