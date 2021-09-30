@@ -8,8 +8,17 @@
 categorys = ['Bills', 'Rent', 'Shopping', 
         'Food', 'Subscriptions', 'Savings']
 
+icons = ['https://ibb.co/sqXdw21',
+'https://ibb.co/DCrTxTn',
+'https://ibb.co/R0vp2Nh',
+'https://ibb.co/1qKmXBg',
+'https://ibb.co/Hd3jPc7',
+'https://ibb.co/1TfCfBb'
+
+]       
+
 categorys.length.times do |i|
-  measurement = Measurement.create!(category: categorys[i])
+  measurement = Measurement.create!(category: categorys[i], icon: icons[i])
   10.times do |j|
     Transaction.create!(data: rand(11.2...76.9).round(2), measurement: measurement)
     puts "#{j+1} created"
