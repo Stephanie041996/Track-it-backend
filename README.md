@@ -1,24 +1,55 @@
-# README
+# TRACKING-IT-BACKEND API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the  backend API built for [Track it app](https://github.com/Stephanie041996/Track_it_Frontend).
 
-Things you may want to cover:
 
-* Ruby version
+### Built with
+- Ruby
+- Ruby on Rails
 
-* System dependencies
+## Getting Started Locally
 
-* Configuration
+- Clone the repo `https://github.com/Stephanie041996/Track-it-backend.git`
+- cd into the project
+- Run `bundle install` to install dependencies
+- In the terminal run `rails server` open up the live server
+- Append one of the endpoints to `http://localhost:3000/` in order to get/post data
 
-* Database creation
+## API endpoints
 
-* Database initialization
+- To get all available measurements `/measurements`
+- To get data for one particular measurement `/measurements/1`
+- To post new measurement data `measurements/` 
+    be sure to use POST request and provide payload in this format `{
+	"measurement": {
+		"id": 5
+	},
+	"measure": {
+		"data": 69.96
+	}`
 
-* How to run the test suite
+## Author
+**Stephanie Sakuhuni**
 
-* Services (job queues, cache servers, search engines, etc.)
+- GitHub: [@stephanie041996](https://github.com/Stephanie041996)
+- LinkedIn: [Stephanie Sakuhuni](www.linkedin.com/in/stephanie-michelle-sakuhuni) 
 
-* Deployment instructions
+## 🤝 Contributing
 
-* ...
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
