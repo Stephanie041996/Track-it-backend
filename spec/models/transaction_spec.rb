@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Transaction, type: :model do
-  measurement = Measurement.create!(name: 'Test', image: 'http://placehold.it/500x500')
+  measurement = Measurement.create!(category: 'Test', icon: 'http://placehold.it/500x500')
 
   it 'has a data' do
     transaction = Transaction.new(data: 'whatever', measurement: measurement)

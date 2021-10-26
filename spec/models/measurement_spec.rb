@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Measurement, type: :model do
   it 'has a category' do
-    measurement = Measurement.new(category: 'Test', icon: 'http://placehold.it/500x500')
+    measurement = Measurement.new(category: '', icon: 'http://placehold.it/500x500')
     expect(measurement).to_not be_valid
 
     measurement.category = 'Test'
